@@ -707,7 +707,7 @@ footer.fixed {
   }
 
   .section--large {
-    width: 150vw;
+    width: 185vw;
     min-width: 300px;
   }
 
@@ -730,7 +730,7 @@ section.active .item--work {
     width: 100%;
     height: calc(60vh + 36px);
     padding-left: 5%;
-    grid-template-columns: 1.2fr 2fr;
+    grid-template-columns: 1.7fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 36px;
     row-gap: 24px;

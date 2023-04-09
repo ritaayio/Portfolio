@@ -649,11 +649,11 @@ article img {
 
 .back a {
   min-width: 48px;
+  transition: all 0.3s ease-in;
 }
 
 .back a:hover {
   color: #333;
-  transition: all 0.3s ease-in;
 }
 
 .color_plate {
@@ -1215,6 +1215,10 @@ article img {
   .color_plate {
     grid-template-columns: repeat(auto-fit, minmax(124px, max-content));
     gap: 8px;
+  }
+
+  .back {
+    width: calc(90%);
   }
 
 }

@@ -645,7 +645,7 @@ article img {
   text-align: center;
 }
 
-.back a{
+.back a {
   min-width: 48px;
 }
 
@@ -673,7 +673,7 @@ article img {
   row-gap: 8px;
 }
 
-.font_display p{
+.font_display p {
   font-size: 1.2em;
 }
 
@@ -828,14 +828,14 @@ article img {
 
   #icon--menu--list {
     opacity: 0;
-    top: -10%;
-    transition: opacity ease-in 0.3s, top cubic-bezier(.89, 0, .58, .85) 0.35s;
+    top: -220px;
+    transition: opacity ease-in 0.3s, top cubic-bezier(.89, 0, .58, .85) 0.5s;
   }
 
   #icon--menu--list.active {
     opacity: 1;
     top: 0;
-    transition: opacity ease-in 0.3s, top cubic-bezier(.89, 0, .58, .85) 0.35s;
+    transition: opacity ease-in 0.3s, top cubic-bezier(.89, 0, .58, .85) 0.5s;
   }
 
   .menu-m {
@@ -912,6 +912,7 @@ article img {
   .section--large {
     width: calc(80vw + 400px + 5%);
     min-width: 300px;
+    height: 89vh;
   }
 
   .section--small {
@@ -936,7 +937,7 @@ article img {
     grid-template-columns: 80vw auto;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 36px;
-    row-gap: 36px;
+    row-gap: 0;
     grid-template-areas:
       ".  work"
       "avatar work"
@@ -1057,6 +1058,7 @@ article img {
     justify-content: start;
     align-items: center;
     text-align: center;
+    margin-top: 24px;
   }
 
   .item--work {
@@ -1064,6 +1066,7 @@ article img {
     justify-content: end;
     align-items: end;
     background-image: url("../img/smp-players.png");
+    height: 100%;
   }
 
   .tags {
@@ -1154,17 +1157,21 @@ article img {
     grid-template-rows: max-content 1fr;
     row-gap: 1px;
     grid-template-areas:
-    "tags--article"
-    "title";
+      "tags--article"
+      "title";
     margin-top: 36px;
   }
 
-  .title{
+  main {
+    width:90%;
+}
+
+  .title {
     grid-area: title;
   }
 
-  .tags--article{
-    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+  .tags--article {
+    grid-template-columns: repeat(auto-fit, minmax(80px, max-content));
     grid-area: tags--article;
     direction: ltr;
   }
@@ -1172,15 +1179,17 @@ article img {
   article>.d-flex .col-2 {
     gap: 24px;
     grid-template-columns: 1fr;
+   justify-content: center;
   }
 
   article>.d-flex .col-3 {
     gap: 24px;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   .color_plate>div {
-min-height: 100px;
+    min-height: 100px;
   }
 
   .element {
@@ -1188,8 +1197,13 @@ min-height: 100px;
     flex-direction: column;
   }
 
-  .element>img{
+  .element>img {
     max-width: 300px;
   }
+
+  .color_plate {
+    grid-template-columns: repeat(auto-fit, minmax(124px, max-content));
+    gap: 8px;
+}
 
 }

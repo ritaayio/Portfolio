@@ -936,7 +936,7 @@ article img {
     max-height: 100%;
     padding-left: 5%;
     grid-template-columns: 80vw auto;
-    grid-template-rows: 40vh 20vh;
+    grid-template-rows: 45vh 15vh;
     column-gap: 36px;
     row-gap: 36px;
     grid-template-areas:
@@ -1000,7 +1000,7 @@ article img {
   .item--avatar>.bg {
     padding: 12px;
     box-sizing: border-box;
-    height: 40vh;
+    height: 45vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content;
@@ -1025,7 +1025,7 @@ article img {
   .item--avatar .bg>img.icon--avatar {
     position: relative;
     display: block;
-    max-height: 20vh;
+    max-height: 25vh;
   }
 
   .item--avatar .bg>img:first-child {
@@ -1050,7 +1050,7 @@ article img {
 
   .item--avatar .bg>img:nth-child(5) {
     bottom: 45%;
-    left: -10px;
+    left: 12px;
     transform: rotate(0.5turn) scale(0.8);
   }
 

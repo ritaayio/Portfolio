@@ -1182,7 +1182,7 @@ article img {
   }
 
   .tags--article {
-    grid-template-columns: repeat(auto-fit, minmax(80px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(95px, max-content));
     grid-area: tags--article;
     direction: ltr;
   }

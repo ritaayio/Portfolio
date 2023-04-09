@@ -933,22 +933,22 @@ article img {
   .about {
     width: 100%;
     height: calc(60vh + 36px);
+    max-height: 100%;
     padding-left: 5%;
     grid-template-columns: 80vw auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40vh 20vh;
     column-gap: 36px;
-    row-gap: 0;
+    row-gap: 36px;
     grid-template-areas:
-      ".  work"
       "avatar work"
-      "text work"
-      ". work";
+      "text work";
   }
 
   .item--avatar {
     display: flex;
     justify-content: center;
     align-items: end;
+    height: 100%;
   }
 
   .item--avatar .bg .icon--avatar {
@@ -999,14 +999,15 @@ article img {
 
   .item--avatar>.bg {
     padding: 12px;
-    height: auto;
+    box-sizing: border-box;
+    height: 40vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr max-content;
+    grid-template-rows: min-content min-content;
     row-gap: 24px;
     column-gap: 12px;
     justify-content: center;
-    align-items: end;
+    align-items: start;
     grid-template-areas:
       "icon--avatar icon--avatar icon--avatar"
       "icon--web icon--graphic icon--video";
@@ -1014,12 +1015,17 @@ article img {
 
   .item--avatar>.bg>.glass {
     position: relative;
+    max-height: calc(20vh - 48px);
+  }
+
+  .item--avatar>.bg>.glass img {
+    max-height: 100%;
   }
 
   .item--avatar .bg>img.icon--avatar {
     position: relative;
     display: block;
-    max-width: 220px;
+    max-height: 20vh;
   }
 
   .item--avatar .bg>img:first-child {
@@ -1058,7 +1064,6 @@ article img {
     justify-content: start;
     align-items: center;
     text-align: center;
-    margin-top: 24px;
   }
 
   .item--work {
@@ -1066,7 +1071,6 @@ article img {
     justify-content: end;
     align-items: end;
     background-image: url("../img/smp-players.png");
-    height: 100%;
   }
 
   .tags {
@@ -1163,8 +1167,8 @@ article img {
   }
 
   main {
-    width:90%;
-}
+    width: 90%;
+  }
 
   .title {
     grid-area: title;
@@ -1179,7 +1183,7 @@ article img {
   article>.d-flex .col-2 {
     gap: 24px;
     grid-template-columns: 1fr;
-   justify-content: center;
+    justify-content: center;
   }
 
   article>.d-flex .col-3 {
@@ -1204,6 +1208,6 @@ article img {
   .color_plate {
     grid-template-columns: repeat(auto-fit, minmax(124px, max-content));
     gap: 8px;
-}
+  }
 
 }

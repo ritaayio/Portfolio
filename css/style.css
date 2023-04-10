@@ -693,6 +693,27 @@ article img {
   row-gap: 24px;
 }
 
+.gap-c-12{
+  column-gap: 12px;
+}
+
+.gap-c-24{
+  column-gap: 24px;
+}
+
+.detail_info{
+  margin-top: 12px;
+}
+
+.detail_info>p{
+  font-size: 0.85em;
+  color: #828282;
+}
+
+.detail_info>p>span{
+  color: #333;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.25em;

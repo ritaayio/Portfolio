@@ -743,19 +743,20 @@ article img {
   }
 
   .icon--web {
-    height: 100px;
+    left: -12px;
+    height: 130px;
   }
 
   .icon--video {
-    height: 70px;
-    bottom: -8px;
+    height: 90px;
+    bottom: 12px;
     right: 12px;
   }
 
   .icon--graphic {
-    height: 80px;
+    height: 75px;
     top: -8px;
-    right: 40px;
+    right: 15%;
   }
 
   .item--work--l {
@@ -764,6 +765,10 @@ article img {
 
   .btn {
     padding: 8px 30px;
+  }
+
+  .card {
+    max-width: 450px;
   }
 
   footer {
@@ -775,6 +780,13 @@ article img {
   }
 
 }
+
+@media screen and (max-width: 1400px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   h1 {

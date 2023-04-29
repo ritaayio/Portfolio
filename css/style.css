@@ -78,6 +78,7 @@ nav {
   width: calc(100% - 120px);
   border-bottom: 1px solid #828282;
   height: 100%;
+  user-select: none;
 }
 
 .menu>ul {

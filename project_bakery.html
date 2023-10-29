@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eira 曾宇彤 | Website & Graphic Designer 網頁/平面設計</title>
+    <title>設計改良 - 烘焙坊網站設計</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,14 @@
     <!-- menu -->
     <nav>
         <div class="d-flex menu">
-            <ul class="font--en">
-                <li><a href="./index.html"><img src="./img/Logo.svg" alt="logo"></a></li>
-                <li><b>Eira</b></li>
-                <li>|</li>
-                <li>Website & Graphic Designer </li>
-            </ul>
+            <a href="./index.html">
+                <ul class="font--en">
+                    <li><img src="./img/Logo.svg" alt="logo"></li>
+                    <li><b>Eira</b></li>
+                    <li>|</li>
+                    <li>UI/UX Designer</li>
+                </ul>
+            </a>
             <ul class="hide--m">
                 <li><a href="./index.html" class="active">作品</a></li>
                 <li><a href="./about.html">關於我</a></li>
@@ -46,6 +48,10 @@
         <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
     </ul>
     <!-- menu end -->
+    <!-- back to start -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top" class="topBtn"><img src="./img/arrow-top.svg"
+            alt=""></button>
+    <!-- back to start end -->
     <main class="d-flex">
         <header class="d-grid gap-r-24">
             <div class="title">
@@ -70,8 +76,10 @@
                 </div>
             </div>
             <!--  -->
+            <div class="divider"></div>
+            <!--  -->
             <div class="d-flex">
-                <h3>設計規範</h3>
+                <h3>設計系統</h3>
                 <div class="d-grid col-2">
                     <div class="d-flex gap-r-24 ">
                         <h4>色票</h4>
@@ -90,14 +98,19 @@
                             <p style="font-family: 'Noto Sans TC', sans-serif;">Noto Sans CJK TC</p>
                         </div>
                     </div>
-
                 </div>
+                <!--  -->
+                <div class="divider"></div>
+                <!--  -->
                 <h3>圖像元素</h3>
                 <div class="d-flex element">
                     <img src="./img/bakery-element-1.jpg" alt="" class="shadow-s">
                     <img src="./img/bakery-element-2.jpg" alt="" class="shadow-s">
                     <img src="./img/bakery-element-3.jpg" alt="" class="shadow-s">
                 </div>
+                <!--  -->
+                <div class="divider"></div>
+                <!--  -->
                 <h3>設計細節</h3>
                 <p>作為烘培坊的網站，重點在於如何展示甜點、吸引消費者的注意並引起食慾。
                     因此在設計時決定將產品圖像作為重點，讓消費者進入網站，第一眼看到的就會是各個美味甜點的輪播。</p>
@@ -122,6 +135,9 @@
                     <img src="./img/bakery-mobile-2.jpg" alt="" class="shadow-s">
                     <img src="./img/bakery-mobile-3.jpg" alt="" class="shadow-s">
                 </div>
+                <!--  -->
+                <div class="divider"></div>
+                <!--  -->
                 <div class="d-grid col-2">
                     <div class="d-flex gap-r-24">
                         <h3>原設計</h3>
@@ -142,10 +158,23 @@
             <!--  -->
         </article>
     </main>
-    <div class="back d-grid">
-        <a href="./project_cayin_smp.html">上一個</a>
-        <a href="./index.html">返回作品一覽</a>
-        <a href="./project_cayin_products.html">下一個</a>
+    <div class="back d-flex">
+        <div class="d-grid col-2">
+            <a href="./project_cayin_smp.html" class="last-page"
+                style="background-image: url('./img/smp-players-h.png');">
+                <div class="d-flex-cl">
+                    <span>上一個 : </span>
+                    <p>設計改良-產品介紹頁面</p>
+                </div>
+            </a>
+            <a href="./project_cayin_products.html" class="next-page"
+                style="background-image: url('./img/products-h.png');">
+                <div class="d-flex-cl">
+                    <span>下一個 : </span>
+                    <p>產品介紹頁面</p>
+                </div>
+            </a>
+        </div>
     </div>
     <!--  -->
     <footer>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設計改良-產品介紹頁面</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav>
+        <div class="d-flex menu">
+            <a href="./index.html">
+                <ul class="font--en">
+                    <li><img src="./img/Logo.svg" alt="logo"></li>
+                    <li><b>Eira</b></li>
+                    <li>|</li>
+                    <li>UI/UX Designer</li>
+                </ul>
+            </a>
+            <ul class="hide--m">
+                <li><a href="./index.html" class="active">作品</a></li>
+                <li><a href="./about.html">關於我</a></li>
+                <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+            </ul>
+            <button id="icon--menu" title="menu">
+                <ul class="show-m">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </button>
+        </div>
+    </nav>
+    <ul class="menu-m" id="icon--menu--list">
+        <li></li>
+        <li><a href="./index.html" class="active">作品</a></li>
+        <li><a href="./about.html">關於我</a></li>
+        <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+    </ul>
+    <!-- menu end -->
+    <!-- back to start -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top" class="topBtn"><img src="./img/arrow-top.svg"
+            alt=""></button>
+    <!-- back to start end -->
+    <main class="d-flex">
+        <header class="d-grid gap-r-24">
+            <div class="title">
+                <h2>CAYIN Index Page Redesign & Design System</h2>
+                <h1>設計改良-鎧應科技官網首頁及設計系統</h1>
+                <p>此項專案是將舊有的鎧應科技首頁進行再設計，同時建立完整的設計系統。</p>
+                <div class="d-flex gap-c-24 border-l detail_info">
+                    <p>負責內容 - <span>UI/UX 設計、前端程式撰寫、設計系統建立</span></p>
+                    <p>服務公司 - <span>鎧應科技股份有限公司</span></p>
+                </div>
+                <a href="https://www.cayintech.com/tw/index.html" class="btn" target="_blank">前往網站</a>
+            </div>
+            <div class="tags--article d-grid">
+                <span>UI/UX 設計</span>
+                <span>HTML / CSS</span>
+                <span>javascript</span>
+                <span>響應式設計</span>
+                <span>設計系統</span>
+            </div>
+        </header>
+        <article class="d-flex">
+            <img src="./img/cayin-index-banner-h.png" alt="" class="img--main">
+            <div class="d-flex">
+                <h3>專案背景</h3>
+                <div class="d-flex">
+                    <p>CAYIN
+                        鎧應科技是一家專注於設計數位廣告看板播放器、以及播放軟體的一家科技公司。<br>企業識別標誌在多年前便已修改、改用其他配色，但官網首頁仍持續使用原有設計，因此決定在公司即將推出新產品系列前進行改造，讓原先就認識或是未來新接觸的客戶都能在進入官網時有更好的體驗。
+                    </p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>專案目標</h3>
+                <div class="d-flex-cl">
+                    <div class="d-grid col-2">
+                        <div class="glass d-flex-cl">
+                            1. 優化首頁架構及視覺設計<br>
+                            <p>除了更改用色之外也希望優化資訊架構及 UI/UX 設計，希望更有效的推廣產品並讓使用者留下好的印象。</p>
+                        </div>
+                        <div class="glass d-flex-cl">
+                            2. 完整設計系統<br>
+                            <p>希望藉此機會同時建立設計系統，不只是首頁，而是讓整體官網擁有統一的視覺設計、並強化企業識別。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>問題提出及假設</h3>
+                <div class="d-flex-cl gap-r-12">
+                    <p>原先的首頁宣傳橫幅是將標題文字與視覺要素做成一張圖片，我們發現此作法會影響到SEO，造成產品無法進一步推廣，因此需確保橫幅標題是獨立出來、使用網頁文字的方式。
+                        另外，為了更有效引導客戶了解產品，在橫幅上也需要包含相關頁面連結。</p>
+                    <p>客戶案例能做為良好的廣告及實際應用展示，但是在原先的首頁不僅位於頁面下方、且占有面積過小，難以有效達到宣傳目的。
+                    </p>
+                    <p class="notes">* 下圖為原先的設計</p>
+                    <div class="d-flex bg-blue">
+                        <img src="./img/cayin-index-og-1.png" alt="">
+                        <img src="./img/cayin-index-og-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計提案</h3>
+                <div class="d-flex-cl" style="gap: 12px;">
+                    <p>在了解問題點、並規劃出整體頁面架構後，便開始進行細部的設計，各個內容區塊通常會設計2種以上的提案。可以看到下圖中包含有特色產品以及客戶案例，前者最終以右側的設計做為定案，主要原因是: 1.
+                        產品照片比例適中，2. 連結樣式特別，較能吸引使用者進行互動；而後者最終也是以右側的設計做為定案，主要原因是: 1. 不對稱比例設計較能吸引使用者目光停留在此區域，2. 左側能含有較多資訊。
+                    </p>
+                    <img src="./img/cayin-index-designs.png" alt="">
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計系統</h3>
+                <img src="./img/cayin-index-designSystem.png" alt="">
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計前後對比</h3>
+                <div class="d-flex bg-blue" style="align-items: start;">
+                    <img src="./img/cayin-index-ogdesign.png" alt="">
+                    <img src="./img/cayin-index-newdesign.png" alt="">
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計展示</h3>
+                <div class="d-flex" style="justify-content: center;">
+                    <img src="./img/cayin-index-mockup.png" alt="" style="width: 800px;">
+                </div>
+            </div>
+            <!--  -->
+        </article>
+    </main>
+    <div class="back d-flex">
+        <div class="d-grid">
+            <a href="./project_cayin_menu.html" class="next-page"
+                style="background-image: url('./img/cayin-menu-banner-h.png');">
+                <div class="d-flex-cl">
+                    <span>下一個 : </span>
+                    <p>設計改良-鎧應官網選單</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--  -->
+    <footer>
+        <p>tseng4W@gmail.com</p>
+        <p>© Tseng Yu Tung 2023 Copyright. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/jQuery-v3.6.4.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

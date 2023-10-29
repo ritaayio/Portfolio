@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設計改良-產品介紹頁面</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav>
+        <div class="d-flex menu">
+            <a href="./index.html">
+                <ul class="font--en">
+                    <li><img src="./img/Logo.svg" alt="logo"></li>
+                    <li><b>Eira</b></li>
+                    <li>|</li>
+                    <li>UI/UX Designer</li>
+                </ul>
+            </a>
+            <ul class="hide--m">
+                <li><a href="./index.html" class="active">作品</a></li>
+                <li><a href="./about.html">關於我</a></li>
+                <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+            </ul>
+            <button id="icon--menu" title="menu">
+                <ul class="show-m">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </button>
+        </div>
+    </nav>
+    <ul class="menu-m" id="icon--menu--list">
+        <li></li>
+        <li><a href="./index.html" class="active">作品</a></li>
+        <li><a href="./about.html">關於我</a></li>
+        <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+    </ul>
+    <!-- menu end -->
+    <!-- back to start -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top" class="topBtn"><img src="./img/arrow-top.svg"
+            alt=""></button>
+    <!-- back to start end -->
+    <main class="d-flex">
+        <header class="d-grid gap-r-24">
+            <div class="title">
+                <h2>CAYIN Website's Menu Redesign</h2>
+                <h1>設計改良-鎧應官網選單</h1>
+                <p>此項專案是將舊有的選單進行資訊架構、以及視覺上的再設計。</p>
+                <div class="d-flex gap-c-24 border-l detail_info">
+                    <p>負責內容 - <span>UI/UX 設計、前端程式撰寫、資訊架構規劃</span></p>
+                    <p>服務公司 - <span>鎧應科技股份有限公司</span></p>
+                </div>
+                <a href="https://www.cayintech.com/tw/index.html" class="btn" target="_blank">前往網站</a>
+            </div>
+            <div class="tags--article d-grid">
+                <span>UI/UX 設計</span>
+                <span>HTML / CSS</span>
+                <span>javascript</span>
+                <span>響應式設計</span>
+                <span>資訊架構規劃</span>
+            </div>
+        </header>
+        <article class="d-flex">
+            <img src="./img/cayin-menu-banner-h.png" alt="" class="img--main">
+            <div class="d-flex">
+                <h3>專案背景</h3>
+                <div class="d-flex">
+                    <p>CAYIN
+                        鎧應科技是一家專注於設計數位廣告看板播放器、以及播放軟體的一家科技公司。公司近年為了擴展市場推出了數個全新定位的產品系列，希望能與過往產品系列做出區隔、同時增進銷售，因此決定進行選單的再設計及產品架構的重新規劃。此外，也因官網頁面日漸增加，希望能藉由資訊架構的重新規劃，促進使用者體驗。
+                    </p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>專案目標</h3>
+                <div class="d-flex-cl">
+                    <div class="d-grid col-3">
+                        <div class="glass d-flex-cl">
+                            1. 強化產品及銷售方案的識別度<br>
+                            <p>希望客戶在選單就可初步判斷產品及銷售方案的定位，進而引導他們觀看合適的頁面。</p>
+                        </div>
+                        <div class="glass d-flex-cl">
+                            2. 優化使用者體驗<br>
+                            <p>希望改進選單的使用者體驗設計，幫助客戶更便利地閱覽官方網站。</p>
+                        </div>
+                        <div class="glass d-flex-cl">
+                            3. 優化視覺設計<br>
+                            <p>希望呈現專業又不失活力的形象，並強化與數位多媒體、廣告看板的關聯性。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>問題提出及假設</h3>
+                <div class="d-flex-cl" style="gap: 12px;">
+                    <p>經由實際聽取客戶的反饋，我們發現他們普遍遇到的問題是，進到官網後不知道該如何找到合適的產品，進行進一步的詢問後發現主因是分類過多、無法判斷方案差異、以及無法用產品名稱判斷其用途。</p>
+                    <p>另外，除了分類上的數量過多，我們也發現舊有的資訊架構存在層級之間權重不一、導致資訊量差異過大的問題，部分下拉選單中會因此放置過多的資訊，增加使用者閱讀的困難度。
+                    </p>
+                    <p>我們也接收到多位使用者針對操作上提出反饋，像是使用Hover的方式進行下拉選單的切換，會導致他們在操作時容易誤觸到其他選項。</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>討論過程</h3>
+                <div class="d-flex-cl" style="gap: 12px;">
+                    <h4>資訊架構建立</h4>
+                    <p>為了解決以上問題，首先與行銷人員進行了討論並確立銷售上的方案內容、以及行銷重點，幫助建立大致的層級規劃方向。大致的方向有的情況下便開始進行資訊上的分類以及架構方式，並提出不同方案進行反覆的討論以及修改。
+                    </p>
+                    <p class="notes">* 截圖經模糊處理</p>
+                    <img src="./img/cayin-menu-plans.png" alt="defferent structures of the website" class="shadow-s">
+                    <h4 style="padding-top: 24px;">Wireframe 繪製</h4>
+                    <p>確定資訊架構後便開始繪製wireframe，並進行反覆的討論及修改，確立整體的設計方向。</p>
+                    <p class="notes">* 截圖經模糊處理</p>
+                    <img src="./img/cayin-menu-discuss.png" alt="Discussing about menu" class="shadow-s">
+                    <h4 style="padding-top: 24px;">設計稿提案</h4>
+                    <p>在最後階段，我們針對不同編排方式及視覺風格製作了數個提案，並與銷售及產品部門的同仁進行討論、決議最終的設計方向。</p>
+                    <img src="./img/cayin-menu-designs.png" alt="Designs" class="shadow-s">
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計策略</h3>
+                <div class="d-flex-cl" style="gap: 12px; ">
+                    <p>
+                        資訊層級上，我們將所有內容進行重新檢視，並參考市面上既有的網站，使用常見的分類進行重新組織，此外，我們也在細項分類上加入對應的符號，並確保各分類的內容擁有相近的項目數量，利用以上方式減少使用者識別的困難度以及閱讀的時間。為了進一步幫助使用者找到自己想閱覽的頁面，我們也在選項中加入輔助用的簡介文字。
+                    </p>
+                    <div class="d-grid col-2" style="gap: 36px;">
+                        <p style="padding-top: 12px;">
+                            視覺上，為了讓品牌與數位多媒體有更多關聯性，我們決定在視覺上賦予他更多的動態、活力的印象，因此在背景上使用了品牌標誌上的元素以及色彩去營造流動感。
+                        </p>
+                        <img src="./img/cayin-menu-bg_concept.png" alt="" style="width: 500px;" class="shadow-s">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計前後對比</h3>
+                <p>為強化產品及銷售方案的識別度，我們將產品的資訊架構重新做規劃，僅將產品分為兩個方案: 1. 專業方案 2. 雲串流方案，兩者的目標客戶分別是企業及零售商店。
+                    同時，也在選單中加入引導性的產品簡介文字，避免首次接觸的客戶無法以產品名稱判斷其用途。 同時，加入最新產品的分類，促進新推出的產品銷售。</p>
+                <img src="./img/cayin-menu-diff.png" alt="產品差異" style="padding: 12px 0">
+                <p>
+                    解決方案 (Solutions) 及顧客案例 (Customer Stories)
+                    ，都是做為客戶進一步判斷產品該如何使用的實際應用資訊，因此我們將性質相近的分類做整合，並將案例依據性質進行排列，使得客戶在查找資訊時能更加方便及快速。
+                </p>
+                <img src="./img/cayin-menu-diff-2.png" alt="解決方案差異" style="padding: 12px 0">
+                <p>
+                    其他輔助類的資訊，例如售後的支援、教學影片、以及公司資訊，我們同樣選擇進行整合，讓調整後的導覽列只會擁有3個分類，避免輔助類資訊於導覽列佔據太多比例，藉此提升產品分類的可見度。
+                </p>
+                <img src="./img/cayin-menu-diff-3.png" alt="輔助資訊差異" style="padding-top: 12px;">
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計展示</h3>
+                <div class="d-flex" style="justify-content: center;">
+                    <img src="./img/cayin-menu-mockup.png" alt="" style="width: 800px;">
+                </div>
+            </div>
+            <!--  -->
+        </article>
+    </main>
+    <div class="back d-flex">
+        <div class="d-grid col-2">
+            <a href="./project_cayin_index.html" class="last-page"
+                style="background-image: url('./img/cayin-index-banner-h.png');">
+                <div class="d-flex-cl">
+                    <span>上一個 : </span>
+                    <p>設計改良-鎧應科技官網首頁及設計系統</p>
+                </div>
+            </a>
+            <a href="./project_MoodWave.html" class="next-page"
+                style="background-image: url('./img/MoodWave-banner.png');">
+                <div class="d-flex-cl">
+                    <span>下一個 : </span>
+                    <p>Mood Wave</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--  -->
+    <footer>
+        <p>tseng4W@gmail.com</p>
+        <p>© Tseng Yu Tung 2023 Copyright. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/jQuery-v3.6.4.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

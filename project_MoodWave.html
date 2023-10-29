@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設計改良-產品介紹頁面</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav>
+        <div class="d-flex menu">
+            <a href="./index.html">
+                <ul class="font--en">
+                    <li><img src="./img/Logo.svg" alt="logo"></li>
+                    <li><b>Eira</b></li>
+                    <li>|</li>
+                    <li>UI/UX Designer</li>
+                </ul>
+            </a>
+            <ul class="hide--m">
+                <li><a href="./index.html" class="active">作品</a></li>
+                <li><a href="./about.html">關於我</a></li>
+                <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+            </ul>
+            <button id="icon--menu" title="menu">
+                <ul class="show-m">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </button>
+        </div>
+    </nav>
+    <ul class="menu-m" id="icon--menu--list">
+        <li></li>
+        <li><a href="./index.html" class="active">作品</a></li>
+        <li><a href="./about.html">關於我</a></li>
+        <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+    </ul>
+    <!-- menu end -->
+    <!-- back to start -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top" class="topBtn"><img src="./img/arrow-top.svg"
+            alt=""></button>
+    <!-- back to start end -->
+    <main class="d-flex">
+        <header class="d-grid gap-r-24">
+            <div class="title">
+                <h2>Side Project</h2>
+                <h1>Mood Wave</h1>
+                <p>Mood Wave 是一個心情紀錄App，讓你輕鬆使用貼圖、照片來記錄日常生活，並附有Ai模板與心情排行功能。只需要微小的時間，就能掌握心情變化，擁有更健康的生活!</p>
+                <div class="d-flex gap-c-24 border-l detail_info">
+                    <p>負責內容 - <span>UI/UX 設計、使用者訪談</span></p>
+                    <p>製作團隊 - <span>Eira、Sammy、安安、Sheena、Yukin、Ｗilly</span></p>
+                    <p>時間 - <span>2023年07月 - 08月</span></p>
+                </div>
+                <a href="https://www.figma.com/proto/XWGUIKgKheUvXTmkgITz5e/%EF%BC%ADood-Wave-%E5%BF%83%E6%83%85%E7%B4%80%E9%8C%84-APP?page-id=6%3A4&type=design&node-id=71-41775&viewport=1562%2C647%2C0.25&t=ScDKK0AWoQYwZ5Jh-1&scaling=scale-down&starting-point-node-id=71%3A41775&mode=design"
+                    class="btn" target="_blank">觀看 Prototype</a>
+            </div>
+            <div class="tags--article d-grid">
+                <span>UI/UX 設計</span>
+                <span>使用者訪談</span>
+            </div>
+        </header>
+        <article class="d-flex">
+            <img src="./img/MoodWave-banner.png" alt="" class="img--main" style="border: 1px solid #C7D3DF;">
+            <div class="d-flex">
+                <h3>專案背景</h3>
+                <div class="d-flex-cl">
+                    <p>這是與一同參與 UI 線上課程的8位同學們共同完成的專案，我在該專案中主要負責項目為「使用者訪談及人物誌撰寫」、「UI 設計」、「設計元件製作與整理」，以及「UX 說明與工程交付文件製作」。
+                    </p>
+                    <h4 style="padding: 24px 0 12px 0;">Why - 選擇主題的原由</h4>
+                    <ul class="d-flex-cl" style="gap: 8px;">
+                        <li>保持心情愉快對生活的重要性</li>
+                        <li>現代人大多長時間對外分享，容易造成社交上的焦慮，需要一個自我探討、與自己對話的空間。</li>
+                    </ul>
+                    <h4 style="padding: 24px 0 12px 0;">Who - 目標族群</h4>
+                    <div class="d-flex-cl gap-r-12">
+                        <p>為了確定該應用程式的目標族群，我們決定進行使用者訪談，首先，共同決定了14道題目，之後便各自進行了使用者訪談，並依據訪談內容製作了親和圖以及人物誌。</p>
+                        <p class="notes">* 下圖部分內容經模糊處理</p>
+                        <img src="./img/moodWave-UXresearch.png" alt="UX research">
+                        <h4 style="padding-top: 12px;">人物誌</h4>
+                        <img src="./img/moodWave-Persona.png" alt="Persona" class="shadow-s">
+                    </div>
+                    <h4 style="padding: 24px 0 12px 0;">What - 產品特性</h4>
+                    <p>分析市面上常見的心情 App後，我們觀察到他們有以下共通點 :</p>
+                    <ul class="d-flex-cl" style="gap: 8px; padding: 12px 0;">
+                        <li>首頁簡化資訊量，專注在最重要的任務 <img src="./img/long-arrow.svg" alt=""> 將新增日記的功能放在顯眼之處</li>
+                        <li>圖像代替打字 <img src="./img/long-arrow.svg" alt=""> 以表情符號代表當天心情</li>
+                        <li>視覺化呈現紀錄的數量多寡 <img src="./img/long-arrow.svg" alt=""> 使用日曆、圖表等方式</li>
+                    </ul>
+                    <p>透過分析競品我們觀察到心情紀錄需隨手記、簡單、快速。<br>此外，在使用者訪談也顯示，使用者偏好快速簡短的紀錄方式，不想花太多時間在記錄上面，希望就算出外過夜，也能輕鬆攜帶作紀錄。<br>因此，設計為手機應用程式會最為適合使用者做心情紀錄的工具。
+                    </p>
+                    <div class="d-flex-cl gap-r-12">
+                        <h4 style="padding-top: 24px;">How - 產品如何運作 </h4>
+                        <p><span>User task : </span>
+                            Ａ小姐今天今天比較忙，還被主管特別唸了一番覺得心累。下班後去運動心情變好點，晚上想要記下今天的心情跟拍下的照片，想要之後可回顧，順便看自己這個月心情統計如何。
+                        </p>
+                        <div class="d-grid flow gap-c-12">
+                            <p>Task flow :</p>
+                            <div class="flow-wrap d-flex" style="flex-wrap: wrap;">
+                                <p>開啟App</p>
+                                <img src="./img/long-arrow.svg" alt="">
+                                <p>選擇心情</p>
+                                <img src="./img/long-arrow.svg" alt="">
+                                <p>編輯日記</p>
+                                <img src="./img/long-arrow.svg" alt="">
+                                <p>完成編輯</p>
+                                <img src="./img/long-arrow.svg" alt="">
+                                <p>看心情總覽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>專案目標</h3>
+                <div class="d-flex-cl">
+                    <p>我們希望 Mood Wave 能達到以下幾個重要目標 :</p>
+                    <div class="d-grid col-3">
+                        <div class="glass d-flex-cl">
+                            1. 快速使用<br>
+                            <p>只需要使用預設心情符號就能記錄。</p>
+                        </div>
+                        <div class="glass d-flex-cl">
+                            2. 養成習慣<br>
+                            <p>加入成就系統來增加持續使用的動力。</p>
+                        </div>
+                        <div class="glass d-flex-cl">
+                            3. 回顧過去<br>
+                            <p>提供報表快速看到月度/年度回顧。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>討論過程</h3>
+                <div class="d-flex-cl" style="gap: 12px;">
+                    <p>此項專案總計花了約2周的時間進行製作，在前期規劃階段，我們利用了兩場會議進行產品的方向討論，內容包括競品分析、使用者訪談及人物誌、產品定位、色彩規劃、User Task、User
+                        Flow。在確定 Mood Wave 的產品方向後，我們接著在下一場會議中共同進行了 Wireframe 的構想及繪製，確立了產品的使用者介面架構。
+                    </p>
+                    <img src="./img/moodWave-disscus.jpg" alt="Designs" class="shadow-s">
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計策略</h3>
+                <div class="d-flex-cl gap-r-24">
+                    <p>
+                        視覺上我們希望傳達讓人安心的印象，讓使用者像是來到一個放鬆、能夠與自己進行對話的空間。因此在色彩上我們選用彩度偏低的暖色，並在物件邊緣導入圓角，避免銳利、刺激的元素。在功能上，我們希望讓疲憊的使用者在一天的最後，能夠快速地記錄下自己的心情，在有空的時候也能夠回顧這些紀錄，並將這些動作變成一個習慣。
+                    </p>
+                    <div class="d-grid col-2 gap-c-24" style="justify-content: center; align-items: center;">
+                        <div class="d-grid gap-c-12" style="grid-template-columns: 1fr 0.6fr; ">
+                            <img src="./img/moodWave-choose-emotion-page.png" alt="choose emotion page"
+                                class="shadow-s">
+                            <img src="./img/moodWave-edit-emotion-card.png" alt="edit page" class="shadow-s">
+                        </div>
+                        <div class="d-flex-cl gap-r-12" style="justify-content: center; align-items: start; ">
+                            <h4>快速使用</h4>
+                            <p>在紀錄的功能上，為了達到能快速使用的目標，我們選擇讓使用者只需使用表情符號就能完成簡單的紀錄。希望加入更多內容的話，也能留下文字紀錄，並利用已經設定好的模板進行快速撰寫，例如快速記下自己當天吃的晚餐、或是今天閱讀的書籍，除了文字，也可以加入內建貼圖、或是自己所拍攝的照片讓紀錄更加豐富。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-grid col-2 gap-c-24" style="align-items: center;">
+                        <!-- text -->
+                        <div class="d-flex-cl gap-r-24">
+                            <div class="d-flex-cl gap-r-12">
+                                <h4>養成習慣</h4>
+                                <p>了鼓勵使用者養成紀錄習慣，我們採用類似遊戲成就系統的方式，每當使用者完成一篇記錄，便會累積經驗值，升級後就能解鎖新的貼圖作為獎勵。</p>
+                            </div>
+                            <div class="d-flex-cl gap-r-12">
+                                <h4>回顧過去</h4>
+                                <p>
+                                    為了讓使用者更方便回顧過往紀錄，除了在時間軸上會顯示每一天紀錄內容之外，我們也加入了「報表」功能，讓使用者能夠檢視一個月/年的紀錄資料，不僅僅是能重溫過往回憶，還能了解自己的心情分布及變化起伏，掌握個人的心理健康狀況。
+                                </p>
+                            </div>
+                        </div>
+                        <!-- text end -->
+                        <div class="d-grid gap-c-12" style="grid-template-columns: 1fr 0.865fr;">
+                            <img src="./img/moodWave-finshed-pop-up-page.png" alt="pop up page" class="shadow-s">
+                            <img src="./img/moodWave-chart-page.png" alt="chart page" class="shadow-s">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計系統</h3>
+                <img src="./img/moodWave-designSystem.png" alt="design system" class="shadow-s">
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>設計展示</h3>
+                <div class="d-flex" style="justify-content: center;">
+                    <video autoplay loop style="width: 100%; border-radius: 5px;" class="shadow-s">
+                        <source src="./img/moodWave-mockupvideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!--  -->
+        </article>
+    </main>
+    <div class="back d-flex">
+        <div class="d-grid col-2">
+            <a href="./project_cayin_menu.html" class="last-page"
+                style="background-image: url('./img/cayin-menu-banner-h.png');">
+                <div class="d-flex-cl">
+                    <span>上一個 : </span>
+                    <p>設計改良-鎧應官網選單</p>
+                </div>
+            </a>
+            <a href="./project_cayin_smp.html" class="next-page"
+                style="background-image: url('./img/smp-players-h.png');">
+                <div class="d-flex-cl">
+                    <span>下一個 : </span>
+                    <p>設計改良-產品介紹頁面</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--  -->
+    <footer>
+        <p>tseng4W@gmail.com</p>
+        <p>© Tseng Yu Tung 2023 Copyright. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/jQuery-v3.6.4.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

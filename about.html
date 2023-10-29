@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eira 曾宇彤 | Website & Graphic Designer 網頁/平面設計</title>
+    <title>Eira 曾宇彤 | UI/UX Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +16,20 @@
 </head>
 
 <body>
+    <!-- menu -->
     <nav>
         <div class="d-flex menu">
-            <ul class="font--en">
-                <li><a href="./index.html"><img src="./img/Logo.svg" alt="logo"></a></li>
-                <li><b>Eira</b></li>
-                <li>|</li>
-                <li>Website & Graphic Designer </li>
-            </ul>
+            <a href="./index.html">
+                <ul class="font--en">
+                    <li><img src="./img/Logo.svg" alt="logo"></li>
+                    <li><b>Eira</b></li>
+                    <li>|</li>
+                    <li>UI/UX Designer</li>
+                </ul>
+            </a>
             <ul class="hide--m">
-                <li><a href="./index.html">作品</a></li>
-                <li><a href="./about.html" class="active">關於我</a></li>
+                <li><a href="./index.html" class="active">作品</a></li>
+                <li><a href="./about.html">關於我</a></li>
                 <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
             </ul>
             <button id="icon--menu" title="menu">
@@ -44,72 +47,204 @@
         <li><a href="./about.html">關於我</a></li>
         <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
     </ul>
-    <!--  -->
+    <!-- menu end -->
+    <!-- back to start -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top" class="topBtn"><img src="./img/arrow-top.svg"
+            alt=""></button>
+    <!-- back to start end -->
+    <!-- contents -->
     <div class="out-wrapper d-flex">
-        <div class="d-flex wrapper--item">
+        <div class="d-grid wrapper--item">
             <div class="d-flex item--about">
+                <!-- avatar -->
                 <div class="bg d-flex">
-                    <img src="./img/line.svg" alt="line" style="top:44px; right:20px;transform: scale(0.85);">
-                    <img src="./img/dots-s.svg" alt="dots" style="bottom:26px; right:60px;">
-                    <img src="./img/dots.svg" alt="dots" style="top:20px; left:24px;">
+                    <img src="./img/line.svg" alt="line" style="top:34px; right:0px;transform: scale(0.85);">
+                    <img src="./img/dots-s.svg" alt="dots" style="bottom:24px; right:24px;">
+                    <img src="./img/dots.svg" alt="dots" style="top:24px; left:24px;">
                     <img src="./img/square.svg" alt="square"
-                        style="bottom:32px; left:32px;transform: rotate(0.75turn);">
+                        style="bottom:24px; left:24px;transform: rotate(0.75turn);">
                     <img src="./img/avatar.svg" alt="avatar" class="shadow icon--avatar" style="border-radius: 50%;">
                 </div>
+                <!-- avatar end -->
             </div>
+            <!--  -->
             <div class="d-flex item--about">
-                <h1>我是曾宇彤 Eira</h1>
-                <h3>有 2 年以上工作經驗的網頁 / 平面設計師，擅長數位設計的同時、也擁有前端語言 ( HTML/CSS ) 撰寫能力。</h3>
-                <h3>我喜歡製作美感以及實用兼顧的設計，在設計的同時確保專案的可執行性以及商業目標，讓理想與現實取得平衡。
-                </h3>
-                <h3>我喜歡觀察周遭人事物、推敲他人的想法，進而加速判斷對方希望達成的目的，幫助專案討論及釐清。</h3>
+                <h1>我是 Eira 曾宇彤</h1>
+                <h4>有 2 年以上 UI/UX 相關經驗，曾於數位軟體公司擔任網頁設計師。</h4>
+                <h4>相信多元的興趣及持續的學習是尋找到設計解決方案的最佳解，不只是 UI/UX 設計、視覺設計，還擁有網頁前端語言撰寫能力、以及使用者訪談經驗。</h4>
+                <h4>前者使得我擅長將設計改念轉化為可操作的成果，將切版概念融入設計之中，強化工程與設計端的結合；後者則協助我以使用者導向的方式思考，強化設計的邏輯依據。</h4>
             </div>
             <!--  -->
         </div>
+        <!-- abilities -->
         <div class="d-grid wrapper--item">
             <div class="d-flex item--ability">
-                <h1>-能力</h1>
+                <h2>能力</h2>
                 <div class="d-flex">
-                    <div class="glass shadow d-flex">
-                        <img src="./img/website.png" alt="">
+                    <!--  -->
+                    <div class="d-flex-cl">
+                        <div class="glass shadow d-flex">
+                            <img src="./img/website_design.svg" alt="UI Design">
+                            <div class="d-flex-cl">
+                                <h3 class="bg-hover">UI/UX 設計</h3>
+                                <p class="sm">以使用者為中心進行設計<br>同時探索商業利益與技術的平衡點</p>
+                            </div>
+                            <!-- tags -->
+                            <div class="tags-wrap d-flex">
+                                <div class="tag">
+                                    <h5>UI Flow</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>Wireframe</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>UI Mockup</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>Prototype</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>使用者訪談</h5>
+                                </div>
+                            </div>
+                            <!-- tags end -->
+                        </div>
                     </div>
-                    <div class="glass shadow d-flex">
-                        <img src="./img/graphic.png" alt="">
+                    <!--  -->
+                    <div class="d-flex-cl">
+                        <div class="glass shadow d-flex">
+                            <img src="./img/graphic.svg" alt="Graphic Design">
+                            <div class="d-flex-cl">
+                                <h3 class="bg-hover">視覺設計</h3>
+                                <p class="sm">掌握企業/產品調性<br>確保視覺元素的美觀及一致性</p>
+                            </div>
+                            <!-- tags -->
+                            <div class="tags-wrap d-flex">
+                                <div class="tag">
+                                    <h5>設計系統</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>插圖</h5>
+                                </div>
+                            </div>
+                            <!-- tags end -->
+                        </div>
                     </div>
-                    <div class="glass shadow d-flex">
-                        <img src="./img/video.png" alt="">
+                    <!--  -->
+                    <div class="d-flex-cl">
+                        <div class="glass shadow d-flex">
+                            <img src="./img/front-end.svg" alt="Video Edit">
+                            <div class="d-flex-cl">
+                                <h3 class="bg-hover">前端語言</h3>
+                                <p class="sm">擁有前端語言撰寫技能<br>可有效減少溝通成本並提升設計的可執行性。</p>
+                            </div>
+                            <!-- tags -->
+                            <div class="tags-wrap d-flex">
+                                <div class="tag">
+                                    <h5>HTML</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>CSS</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>jQuery</h5>
+                                </div>
+                                <div class="tag">
+                                    <h5>響應式網站</h5>
+                                </div>
+                            </div>
+                            <!-- tags end -->
+                        </div>
                     </div>
+                    <!--  -->
                 </div>
             </div>
+        </div>
+        <!-- abilities end -->
+        <!-- tools -->
+        <div class="d-grid wrapper--item">
             <div class="d-flex item--ability">
-                <h1>-工具軟體</h1>
+                <h2>工具軟體</h2>
                 <div class="d-grid tools">
-                    <div class="card--blue shadow d-flex">
-                        <img src="./img/figma_logo.svg" alt="">
+                    <!-- 1 -->
+                    <div class="card--blue shadow d-flex-cl">
+                        <div class="img_box">
+                            <img src="./img/figma_logo.svg" alt="" style="width: 20%;">
+                        </div>
+                        <h4>Figma</h4>
                     </div>
-                    <div class="card--blue shadow d-flex">
-                        <img src="./img/illustrator.svg" alt="">
+                    <!-- 2 -->
+                    <div class="card--blue shadow d-flex-cl">
+                        <div class="img_box">
+                            <img src="./img/illustrator.svg" alt="" style="width: 22%;">
+                        </div>
+                        <h4>Illustrator</h4>
                     </div>
-                    <div class="card--blue shadow d-flex">
-                        <img src="./img/photoshop.svg" alt="">
+                    <!-- 3 -->
+                    <div class="card--blue shadow d-flex-cl">
+                        <div class="img_box">
+                            <img src="./img/photoshop.svg" alt="" style="width: 25%;">
+                        </div>
+                        <h4>Photoshop</h4>
                     </div>
-                    <div class="card--blue shadow d-flex">
-                        <img src="./img/AfterEffects.svg" alt="">
+                    <!-- 4 -->
+                    <div class="card--blue shadow d-flex-cl">
+                        <div class="img_box">
+                            <img src="./img/AfterEffects.svg" alt="" style="width: 30%;">
+                        </div>
+                        <h4>After Effects</h4>
                     </div>
-                    <div class="card--blue shadow d-flex">
-                        <img src="./img/premier.svg" alt="">
+                    <!-- 5 -->
+                    <div class="card--blue shadow d-flex-cl">
+                        <div class="img_box">
+                            <img src="./img/vscode.svg" alt="" style="width: 28%;">
+                        </div>
+                        <h4>VS Code</h4>
                     </div>
-                    <div class="card--blue shadow d-flex">
-                        <img src="./img/vscode.svg" alt="">
-                    </div>
-                    <div class="card--blue shadow d-flex">
-                        <img src="./img/csp.svg" alt="">
+                    <!-- 6 -->
+                    <div class="card--blue shadow d-flex-cl">
+                        <div class="img_box">
+                            <img src="./img/notion_icon.svg" alt="" style="width: 28%;">
+                        </div>
+                        <h4>Notion</h4>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- tools end -->
+        <!-- 經歷  -->
+        <div class="d-grid wrapper--item">
+            <div class="d-flex-cl item--experience">
+                <h2>工作經歷</h2>
+                <div class="d-flex">
+                    <!--  -->
+                    <div class="glass shadow d-grid">
+                        <div class="d-flex-cl">
+                            <h3>網頁設計師</h3>
+                            <h4 style="color: #828282; font-weight: 400"><a href="https://www.cayintech.com/tw/"
+                                    class="link-ul" target="_blank">鎧應科技</a><img src="./img/long-arrow.svg" alt="arrow"
+                                    style="padding-right: 8px;"> 2021.02 - 2023.06</h4>
+                        </div>
+                        <!--  -->
+                        <div class="d-flex-cl">
+                            <p>
+                                負責公司官網 UI/UX 設計、前端語言撰寫及檔案管理，以及其他行銷素材設計。<br>
+                            </p>
+                            <p>負責項目主要包含:</p>
+                            <ul>
+                                <li>與產品經理及行銷人員討論並重新規劃官網資訊架構，制定設計系統以及設計元件，進行官網整體設計改良。</li>
+                                <li>完成 4 個網頁設計改良，提升使用者體驗及產品功能呈現。</li>
+                                <li>完成 9 個全新產品頁面設計，強化產品功能特色及行銷重點。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+        <!-- 經歷 end -->
     </div>
-    <!--  -->
+    <!-- contents end -->
     <footer>
         <p>tseng4W@gmail.com</p>
         <p>© Tseng Yu Tung 2023 Copyright. All Rights Reserved.</p>

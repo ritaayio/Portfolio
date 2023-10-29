@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eira 曾宇彤 | Website & Graphic Designer 網頁/平面設計</title>
+  <title>Eira 曾宇彤 | UI/UX Portfolio</title>
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,45 +16,50 @@
 </head>
 
 <body>
-  <!-- menu -->
-  <nav>
-    <div class="d-flex menu">
-      <ul class="font--en">
-        <li><a href="./index.html"><img src="./img/Logo.svg" alt="logo"></a></li>
-        <li><b>Eira</b></li>
-        <li>|</li>
-        <li>Website & Graphic Designer </li>
-      </ul>
-      <ul class="hide--m">
-        <li><a href="./index.html" class="active">作品</a></li>
-        <li><a href="./about.html">關於我</a></li>
-        <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
-      </ul>
-      <button id="icon--menu" title="menu">
-        <ul class="show-m">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </button>
-    </div>
+    <!-- menu -->
+    <nav>
+      <div class="d-flex menu">
+          <a href="./index.html">
+              <ul class="font--en">
+                  <li><img src="./img/Logo.svg" alt="logo"></li>
+                  <li><b>Eira</b></li>
+                  <li>|</li>
+                  <li>UI/UX Designer</li>
+              </ul>
+          </a>
+          <ul class="hide--m">
+              <li><a href="./index.html" class="active">作品</a></li>
+              <li><a href="./about.html">關於我</a></li>
+              <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+          </ul>
+          <button id="icon--menu" title="menu">
+              <ul class="show-m">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+          </button>
+      </div>
   </nav>
   <ul class="menu-m" id="icon--menu--list">
-    <li></li>
-    <li><a href="./index.html" class="active">作品</a></li>
-    <li><a href="./about.html">關於我</a></li>
-    <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
+      <li></li>
+      <li><a href="./index.html" class="active">作品</a></li>
+      <li><a href="./about.html">關於我</a></li>
+      <li><a href="mailto:tseng4w@gmail.com">聯絡</a></li>
   </ul>
   <!-- menu end -->
+  <!-- back to start -->
+  <button onclick="topFunction()" id="topBtn" title="Go to start" class="index-startBtn"><img src="./img/arrow-left.svg" alt=""></button>
+  <!-- back to start end -->
   <div class="wrapper d-flex container" id="gsap-wrapper">
     <!--  -->
     <section class="section section--large d-flex">
       <div class="d-grid about">
         <!--  -->
         <div class="item--text d-flex">
-          <h1><span>Hello!</span> 我是曾宇彤 Eira</h1>
-          <h2>在網頁 / 平面設計 擁有兩年以上工作經驗</h2>
-          <h3>我熱愛追求美麗的事物，並用理性的方式去實作</h3>
+          <h1><span>嗨!</span> 我是 Eira 曾宇彤， <br> 一位 UI/UX 設計師</h1>
+          <h4>在 UI/UX 相關領域擁有兩年以上經驗，</h4>
+          <h4>設計思維與前端語言的相互融合。</h4>
           <a href="mailto:tseng4w@gmail.com" class="btn hide--m">聯絡我</a>
         </div>
         <!--  -->
@@ -75,33 +80,99 @@
             <div class="glass shadow icon--video">
               <img src="./img/video.svg" alt="">
             </div>
-            <img src="./img/avatar.svg" alt="avatar" class="shadow icon--avatar" style="border-radius: 50%;">
+            <div class="img-box d-flex">
+              <img src="./img/avatar.svg" alt="avatar" class="shadow icon--avatar" style="border-radius: 50%;">
+            </div>
           </div>
         </div>
         <!--  -->
         <div class="item--work">
           <div class="card shadow d-flex">
             <div>
-              <h3>CAYIN SMP Players</h3>
-              <h2>設計改良-產品介紹頁面</h2>
+              <h3>CAYIN Index Page Redesign</h3>
+              <h2>設計改良-鎧應科技官網首頁</h2>
               <p>
-                此項專案是將舊有的頁面進行設計優化，重新進行區域編排、圖像設計，並大量加入原先缺乏的動態及使用者互動效果，進而改善使用體驗並強化產品功能特色。
+                此項專案是將舊有的鎧應科技首頁進行再設計，同時建立完整的設計系統。
               </p>
             </div>
-            <a href="./project_cayin_smp.html" class="btn">了解更多</a>
+            <a href="./project_cayin_index.html" class="btn">了解更多</a>
           </div>
           <div class="tags d-grid">
-            <span>網頁設計</span>
-            <span>HTML/CSS</span>
-            <span>響應式網頁</span>
-            <span>向量動畫</span>
-            <span>平面設計</span>
+            <span>UI/UX 設計</span>
+            <span>HTML / CSS</span>
+            <span>javascript</span>
+            <span>響應式設計</span>
+            <span>設計系統</span>
           </div>
         </div>
         <!--  -->
       </div>
     </section>
     <!--  -->
+    <!--  -->
+    <section class="section section--small d-flex">
+      <div class="item--work--l d-flex" style="background-image: url('./img/cayin-menu.png')">
+        <div class="tags d-grid">
+          <span>UI/UX 設計</span>
+          <span>HTML / CSS</span>
+          <span>響應式設計</span>
+          <span>資訊架構規劃</span>
+        </div>
+        <div class="card shadow d-flex">
+          <div>
+            <h3>CAYIN Website's Menu Redesign</h3>
+            <h2>設計改良-鎧應官網選單</h2>
+            <p>
+              此項專案是將舊有的選單進行資訊架構、以及視覺上的再設計。
+            </p>
+          </div>
+          <a href="./project_cayin_menu.html" class="btn">了解更多</a>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <section class="section section--small d-flex">
+      <div class="item--work--l d-flex" style="background-image: url('./img/moodWave-h.png')">
+        <div class="tags d-grid">
+          <span>網頁設計</span>
+          <span>響應式網頁</span>
+          <span>平面設計</span>
+        </div>
+        <div class="card shadow d-flex">
+          <div>
+            <h3>Side Project</h3>
+            <h2>Mood Wave</h2>
+            <p>
+              Mood Wave 是一個心情紀錄App，讓你輕鬆使用貼圖、照片來記錄日常生活，並附有Ai模板與心情排行功能。只需要微小的時間，就能掌握心情變化，擁有更健康的生活!
+            </p>
+          </div>
+          <a href="./project_MoodWave.html" class="btn">了解更多</a>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="section section--small d-flex">
+      <div class="item--work--l d-flex" style="background-image: url('./img/smp-page.png')">
+        <div class="tags d-grid">
+          <span>UI/UX 設計</span>
+          <span>HTML / CSS</span>
+          <span>響應式設計</span>
+          <span>向量動畫</span>
+          <span>平面設計</span>
+        </div>
+        <div class="card shadow d-flex">
+          <div>
+            <h3>CAYIN SMP Players</h3>
+            <h2>設計改良-產品介紹頁面</h2>
+            <p>
+              此項專案是將舊有的頁面進行設計優化，重新進行區域編排、圖像設計，並大量加入原先缺乏的動態及使用者互動效果，進而改善使用體驗並強化產品功能特色。
+            </p>
+          </div>
+          <a href="./project_cayin_products.html" class="btn">了解更多</a>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
     <section class="section section--small d-flex">
       <div class="item--work--l d-flex" style="background-image: url('./img/bakery.png')">
         <div class="tags d-grid">
@@ -125,10 +196,10 @@
     <section class="section section--small d-flex">
       <div class="item--work--l d-flex" style="background-image: url('./img/products.png')">
         <div class="tags d-grid">
-          <span>網頁設計</span>
-          <span>HTML/CSS</span>
-          <span>響應式網頁</span>
-          <span>影片製作</span>
+          <span>UI/UX 設計</span>
+          <span>HTML / CSS</span>
+          <span>響應式設計</span>
+          <span>影片剪輯</span>
           <span>平面設計</span>
         </div>
         <div class="card shadow d-flex">
@@ -136,69 +207,10 @@
             <h3>CAYIN Products</h3>
             <h2>產品介紹頁面</h2>
             <p>
-              此項專案是為新推出的產品製作產品介紹頁面，在設計規範之下，依據各個產品特性進行設計。產品類型包含伺服器、軟體...等。
+              此頁面介紹多個產品介紹頁面，包含編輯廣告影像、以及管理系統之軟體...等。
             </p>
           </div>
           <a href="./project_cayin_products.html" class="btn">了解更多</a>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <section class="section section--small d-flex">
-      <div class="item--work--l d-flex" style="background-image: url('./img/support.png')">
-        <div class="tags d-grid">
-          <span>網頁設計</span>
-          <span>HTML/CSS</span>
-          <span>響應式網頁</span>
-          <span>JavaScript</span>
-        </div>
-        <div class="card shadow d-flex">
-          <div>
-            <h3>CAYIN Support</h3>
-            <h2>技術支援頁面</h2>
-            <p>
-              此項專案包含教學影片、常見問題集頁面，旨在提供顧客技術上的協助。
-            </p>
-          </div>
-          <a href="./project_cayin_support.html" class="btn">了解更多</a>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <section class="section section--small d-flex">
-      <div class="item--work--l d-flex" style="background-image: url('./img/email.png')">
-        <div class="tags d-grid">
-          <span>網頁設計</span>
-          <span>HTML/CSS</span>
-          <span>平面設計</span>
-        </div>
-        <div class="card shadow d-flex">
-          <div>
-            <h3>CAYIN Email Blast</h3>
-            <h2>宣傳電子報</h2>
-            <p>
-              此項專案包含各類主題的電子報，例如新品宣傳、參展通知、榮獲獎項...等，旨在提供顧客最新消息及推廣產品。
-            </p>
-          </div>
-          <a href="./project_cayin_email.html" class="btn">了解更多</a>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <section class="section section--small d-flex">
-      <div class="item--work--l d-flex" style="background-image: url('./img/banner.png')">
-        <div class="tags d-grid">
-          <span>平面設計</span>
-        </div>
-        <div class="card shadow d-flex">
-          <div>
-            <h3>CAYIN Banner</h3>
-            <h2>宣傳圖設計</h2>
-            <p>
-              此項專案包含各類主題的宣傳圖設計，使用於官網以及各大社群媒體，旨在增加顧客觸及率。
-            </p>
-          </div>
-          <a href="./project_cayin_banner.html" class="btn">了解更多</a>
         </div>
       </div>
     </section>

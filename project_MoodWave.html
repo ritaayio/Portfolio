@@ -13,6 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css"
+        integrity="sha512-eG8C/4QWvW9MQKJNw2Xzr0KW7IcfBSxljko82RuSs613uOAg/jHEeuez4dfFgto1u6SRI/nXmTr9YPCjs1ozBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
             c[a] = c[a] || function () {
@@ -71,8 +74,8 @@
                 <h1>Mood Wave</h1>
                 <p>Mood Wave 是一個心情紀錄App，讓你輕鬆使用貼圖、照片來記錄日常生活，並附有Ai模板與心情排行功能。只需要微小的時間，就能掌握心情變化，擁有更健康的生活!</p>
                 <div class="d-flex gap-c-24 border-l detail_info">
-                    <p>負責內容 - <span>UI/UX 設計、使用者訪談</span></p>
-                    <p>製作團隊 - <span>Eira、Sammy、安安、Sheena、Yukin、Ｗilly</span></p>
+                    <p>負責內容 - <span>使用者訪談、Wireframe 註解、<br>UI Mockup、設計元件製作及交付文件</span></p>
+                    <p>製作團隊 - <span>Eira、Sammy、安安、Sheena、<br>Yukin、Ｗilly</span></p>
                     <p>時間 - <span>2023年07月 - 08月</span></p>
                 </div>
                 <a href="https://www.figma.com/proto/XWGUIKgKheUvXTmkgITz5e/%EF%BC%ADood-Wave-%E5%BF%83%E6%83%85%E7%B4%80%E9%8C%84-APP?page-id=6%3A4&type=design&node-id=71-41775&viewport=1562%2C647%2C0.25&t=ScDKK0AWoQYwZ5Jh-1&scaling=scale-down&starting-point-node-id=71%3A41775&mode=design"
@@ -173,6 +176,28 @@
             <div class="divider"></div>
             <!--  -->
             <div class="d-flex">
+                <h3>線框圖 Wireframe</h3>
+                <div>
+                    <p class="notes">* 點擊圖片放大觀看</p>
+                    <img id="image" src="./img/moodwave_wireframe.jpg" alt="Wireframe" class="shadow-s"
+                        style="cursor: pointer;">
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
+                <h3>介面流程 UI Flow</h3>
+                <div>
+                    <p class="notes">* 點擊圖片放大觀看</p>
+                    <img id="image-flow" src="./img/moodwave_UI_flow.jpg" alt="Wireframe" class="shadow-s"
+                        style="cursor: pointer;">
+                </div>
+            </div>
+            <!--  -->
+            <div class="divider"></div>
+            <!--  -->
+            <div class="d-flex">
                 <h3>設計策略</h3>
                 <div class="d-flex-cl gap-r-24">
                     <p>
@@ -259,6 +284,62 @@
     </footer>
     <script src="./js/jQuery-v3.6.4.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.js"
+        integrity="sha512-MdZwHb4u4qCy6kVoTLL8JxgPnARtbNCUIjTCihWcgWhCsLfDaQJib4+OV0O8IS+ea+3Xv/6pH3vYY4LWpU/gbQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // View an image.
+        const viewer = new Viewer(document.getElementById('image'), {
+            inline: false,
+            viewed() {
+                viewer.zoomTo(0.25);
+            },
+            title: false,
+            navbar: false,
+            toolbar: {
+                zoomIn: 4,
+                zoomOut: 4,
+                oneToOne: 0,
+                reset: 0,
+                prev: 0,
+                play: {
+                    show: 0,
+                    size: 'small',
+                },
+                next: 0,
+                rotateLeft: 0,
+                rotateRight: 0,
+                flipHorizontal: 0,
+                flipVertical: 0,
+            },
+        });
+
+        // View an image.
+        const viewerflow = new Viewer(document.getElementById('image-flow'), {
+            inline: false,
+            viewed() {
+                viewerflow.zoom(0.5);
+            },
+            title: false,
+            navbar: false,
+            toolbar: {
+                zoomIn: 4,
+                zoomOut: 4,
+                oneToOne: 0,
+                reset: 0,
+                prev: 0,
+                play: {
+                    show: 0,
+                    size: 'small',
+                },
+                next: 0,
+                rotateLeft: 0,
+                rotateRight: 0,
+                flipHorizontal: 0,
+                flipVertical: 0,
+            },
+        });
+    </script>
 </body>
 
 </html>
